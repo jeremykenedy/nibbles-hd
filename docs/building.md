@@ -12,7 +12,7 @@ python3 scripts/check-docs.py
 git diff --check
 ```
 
-CI runs this same sequence on Ubuntu with pinned checkout/Java/Python action commits. Java formatter and JaCoCo downloads have pinned SHA-256 values. Python tools have fixed versions. CI never receives the production key and only builds an unsigned review APK. No external rating service is configured or claimed.
+CI runs this same sequence on Ubuntu with pinned checkout/Java/Python action commits, plus a local Gitleaks 8.30.1 source-history scan. Java formatter and JaCoCo downloads have pinned SHA-256 values. Python tools have fixed versions. CI never receives the production key and only builds an unsigned review APK. No external rating service is configured or claimed.
 
 `bash build.sh` signs locally. The unique production key and password file are outside Git; preserve them for updates. The build refuses a missing key paired with an existing password file. Do not generate a replacement for a published identity. The release package is `com.jeremykenedy.nibbleshd`, version 1.0.0/code 3, min API 23 and target 36.
 
