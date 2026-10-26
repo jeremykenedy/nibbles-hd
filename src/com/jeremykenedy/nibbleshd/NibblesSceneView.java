@@ -117,7 +117,7 @@ public final class NibblesSceneView extends View implements Choreographer.FrameC
             width * .46f,
             height * .4f,
             width * .7f,
-            new int[] {0xff18272d, 0xff0d171e, 0xff060b12},
+            new int[] {0xff2a404b, 0xff1b2d38, 0xff101c27},
             null,
             Shader.TileMode.CLAMP);
     for (int i = 0; i < ribbonShaders.length; i++) {
@@ -127,7 +127,7 @@ public final class NibblesSceneView extends View implements Choreographer.FrameC
               top,
               left + boardWidth,
               top + boardHeight,
-              new int[] {lighten(colors[i], .17f), colors[i], darken(colors[i], .72f)},
+              new int[] {lighten(colors[i], .06f), colors[i], darken(colors[i], .92f)},
               null,
               Shader.TileMode.CLAMP);
     }
@@ -162,7 +162,7 @@ public final class NibblesSceneView extends View implements Choreographer.FrameC
 
   private void drawTable(Canvas canvas) {
     paint.setStyle(Paint.Style.FILL);
-    paint.setColor(0xff101e25);
+    paint.setColor(0xff213640);
     rectangle.set(
         left - cell * .7f,
         top - cell * .7f,
@@ -170,17 +170,17 @@ public final class NibblesSceneView extends View implements Choreographer.FrameC
         top + boardHeight + cell * .7f);
     canvas.drawRoundRect(rectangle, cell * 1.2f, cell * 1.2f, paint);
     paint.setStyle(Paint.Style.STROKE);
-    paint.setStrokeWidth(cell * .035f);
-    paint.setColor(0xff26363d);
+    paint.setStrokeWidth(cell * .025f);
+    paint.setColor(0xff4c626e);
     canvas.drawRoundRect(rectangle, cell * 1.2f, cell * 1.2f, paint);
     paint.setStyle(Paint.Style.FILL);
     for (int y = 0; y < game.rows; y++) {
       for (int x = 0; x < game.columns; x++) {
         if (game.walls[game.cell(x, y)]) continue;
         float wave = .5f + .5f * (float) Math.sin(x * .12 + y * .17 + seconds * .13);
-        paint.setColor(0xff759097);
-        paint.setAlpha((int) (10 + wave * 12));
-        canvas.drawCircle(cx(x), cy(y), cell * .033f, paint);
+        paint.setColor(0xffa4c2cc);
+        paint.setAlpha((int) (17 + wave * 12));
+        canvas.drawCircle(cx(x), cy(y), cell * .029f, paint);
       }
     }
     paint.setAlpha(255);
@@ -212,14 +212,14 @@ public final class NibblesSceneView extends View implements Choreographer.FrameC
         left + (x + width) * cell - inset,
         top + (y + height) * cell - inset + cell * .1f);
     paint.setStyle(Paint.Style.FILL);
-    paint.setColor(0xff070f15);
+    paint.setColor(0xff101f29);
     paint.setAlpha(255);
     canvas.drawRoundRect(rectangle, cell * .36f, cell * .36f, paint);
     rectangle.offset(0, -cell * .1f);
-    paint.setColor(0xff24383f);
+    paint.setColor(0xff3c535f);
     canvas.drawRoundRect(rectangle, cell * .36f, cell * .36f, paint);
     rectangle.inset(cell * .07f, cell * .07f);
-    paint.setColor(0xff2c4148);
+    paint.setColor(0xff607784);
     paint.setStyle(Paint.Style.STROKE);
     paint.setStrokeWidth(cell * .035f);
     canvas.drawRoundRect(rectangle, cell * .3f, cell * .3f, paint);
@@ -230,29 +230,27 @@ public final class NibblesSceneView extends View implements Choreographer.FrameC
     for (int i = 0; i < game.food.size(); i++) {
       int food = game.food.get(i);
       float x = cx(food % game.columns), y = cy(food / game.columns);
-      float pulse = 1 + .10f * (float) Math.sin(seconds * 2.7f + food);
+      float pulse = 1 + .08f * (float) Math.sin(seconds * 2.7f + food);
       paint.setStyle(Paint.Style.FILL);
       if (options.effects > 0) {
-        paint.setColor(0xffffcd88);
-        paint.setAlpha((int) (7 * visibility));
+        paint.setColor(0xffffdf9e);
+        paint.setAlpha((int) (8 * visibility));
         canvas.drawCircle(x, y, cell * .9f * pulse, paint);
-        paint.setAlpha((int) (17 * visibility));
-        canvas.drawCircle(x, y, cell * .57f * pulse, paint);
+        paint.setAlpha((int) (19 * visibility));
+        canvas.drawCircle(x, y, cell * .62f * pulse, paint);
       }
-      paint.setColor(0xffb9783c);
+      paint.setColor(0xffc7974f);
       paint.setAlpha((int) (240 * visibility));
-      canvas.drawCircle(x, y + cell * .045f, cell * .23f, paint);
-      paint.setColor(0xffffd493);
+      canvas.drawCircle(x, y, cell * .36f, paint);
+      paint.setColor(0xffffe3a6);
       paint.setAlpha((int) (255 * visibility));
-      canvas.drawCircle(x, y, cell * .2f * pulse, paint);
-      paint.setColor(0xfffff0d2);
-      canvas.drawCircle(x - cell * .055f, y - cell * .055f, cell * .075f, paint);
+      canvas.drawCircle(x, y, cell * .31f * pulse, paint);
       if (options.effects == 2) {
         paint.setStyle(Paint.Style.STROKE);
         paint.setStrokeWidth(cell * .025f);
-        paint.setColor(0xffffd493);
-        paint.setAlpha((int) (45 * visibility));
-        canvas.drawCircle(x, y, cell * (.45f + .09f * pulse), paint);
+        paint.setColor(0xffffe3a6);
+        paint.setAlpha((int) (55 * visibility));
+        canvas.drawCircle(x, y, cell * (.53f + .09f * pulse), paint);
       }
     }
   }
@@ -283,48 +281,30 @@ public final class NibblesSceneView extends View implements Choreographer.FrameC
     paint.setStrokeJoin(Paint.Join.ROUND);
     paint.setStrokeCap(Paint.Cap.ROUND);
     canvas.save();
-    canvas.translate(0, cell * .13f);
-    paint.setStrokeWidth(cell * .74f);
-    paint.setColor(0xff030a0d);
-    paint.setAlpha((int) (200 * visibility));
+    canvas.translate(0, cell * .06f);
+    paint.setStrokeWidth(cell * .62f);
+    paint.setColor(0xff08151d);
+    paint.setAlpha((int) (100 * visibility));
     canvas.drawPath(ribbon, paint);
     canvas.restore();
     if (options.effects > 0) {
       paint.setColor(colors[index]);
-      paint.setAlpha((int) ((options.effects == 2 ? 15 : 7) * visibility));
-      paint.setStrokeWidth(cell * 1.1f);
+      paint.setAlpha((int) ((options.effects == 2 ? 7 : 3) * visibility));
+      paint.setStrokeWidth(cell * .84f);
       canvas.drawPath(ribbon, paint);
     }
-    paint.setColor(darken(colors[index], .50f));
-    paint.setAlpha((int) (255 * visibility));
-    paint.setStrokeWidth(cell * .68f);
-    canvas.drawPath(ribbon, paint);
-    paint.setShader(ribbonShaders[index]);
-    paint.setAlpha((int) (255 * visibility));
-    paint.setStrokeWidth(cell * .54f);
-    canvas.drawPath(ribbon, paint);
-    paint.setShader(null);
     canvas.save();
-    canvas.translate(0, -cell * .12f);
-    paint.setColor(lighten(colors[index], .62f));
-    paint.setAlpha((int) (70 * visibility));
-    paint.setStrokeWidth(cell * .085f);
+    canvas.translate(-cell * .025f, -cell * .025f);
+    paint.setColor(lighten(colors[index], .30f));
+    paint.setAlpha((int) (170 * visibility));
+    paint.setStrokeWidth(cell * .60f);
     canvas.drawPath(ribbon, paint);
     canvas.restore();
-    float dx = px[0] - px[1], dy = py[0] - py[1];
-    float distance = Math.max(.001f, (float) Math.sqrt(dx * dx + dy * dy));
-    dx /= distance;
-    dy /= distance;
-    paint.setStyle(Paint.Style.FILL);
-    for (int side = -1; side <= 1; side += 2) {
-      float x = px[0] + dx * cell * .1f - dy * cell * .12f * side;
-      float y = py[0] + dy * cell * .1f + dx * cell * .12f * side;
-      paint.setColor(0xffeaf5ee);
-      paint.setAlpha((int) (220 * visibility));
-      canvas.drawCircle(x, y, cell * .058f, paint);
-      paint.setColor(0xff15232b);
-      canvas.drawCircle(x + dx * cell * .018f, y + dy * cell * .018f, cell * .033f, paint);
-    }
+    paint.setShader(ribbonShaders[index]);
+    paint.setAlpha((int) (255 * visibility));
+    paint.setStrokeWidth(cell * .60f);
+    canvas.drawPath(ribbon, paint);
+    paint.setShader(null);
   }
 
   private void drawCollision(Canvas canvas) {

@@ -11,6 +11,7 @@ import android.preference.PreferenceManager;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -26,7 +27,7 @@ public final class SettingsActivity extends Activity {
     prefs = PreferenceManager.getDefaultSharedPreferences(this);
     LinearLayout content = new LinearLayout(this);
     content.setOrientation(LinearLayout.VERTICAL);
-    content.setPadding(dp(48), dp(28), dp(48), dp(32));
+    content.setPadding(dp(48), dp(28), dp(48), dp(48));
     content.setBackgroundColor(0xff0c171f);
     TextView title = new TextView(this);
     title.setText("Nibbles HD");
@@ -78,7 +79,11 @@ public final class SettingsActivity extends Activity {
     ScrollView scroll = new ScrollView(this);
     scroll.setFillViewport(true);
     scroll.addView(content);
-    setContentView(scroll);
+    FrameLayout viewport = new FrameLayout(this);
+    viewport.setBackgroundColor(0xff0c171f);
+    viewport.setPadding(0, 0, 0, dp(36));
+    viewport.addView(scroll, new FrameLayout.LayoutParams(-1, -1));
+    setContentView(viewport);
     preview.requestFocus();
   }
 

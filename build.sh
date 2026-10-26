@@ -11,7 +11,7 @@ if [[ "${1:-}" == "--unsigned" ]]; then UNSIGNED=true; fi
 KEYSTORE="${NIBBLES_HD_KEYSTORE:-$HOME/.android/nibbles-hd.jks}"
 KEYPASS="${NIBBLES_HD_KEYPASS:-$HOME/.android/nibbles-hd.pass}"
 VERSION_NAME="${VERSION_NAME:-1.0.0}"
-VERSION_CODE="${VERSION_CODE:-1}"
+VERSION_CODE="${VERSION_CODE:-2}"
 
 for tool in javac keytool openssl zip; do
   command -v "$tool" >/dev/null || { echo "Missing required tool: $tool" >&2; exit 1; }

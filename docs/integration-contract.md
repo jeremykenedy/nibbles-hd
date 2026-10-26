@@ -10,7 +10,7 @@
 | Settings | `com.jeremykenedy.nibbleshd/.SettingsActivity` |
 | Preview | `com.jeremykenedy.nibbleshd/.PreviewActivity` |
 | Minimum / target API | 23 / 36 |
-| Candidate version | 1.0.0, version code 1 |
+| Candidate version | 1.0.0, version code 2 |
 | Intended APK/checksum | `nibbles-hd.apk`, `nibbles-hd.apk.sha256` |
 | License | Apache-2.0 |
 | Schema | `content://com.jeremykenedy.nibbleshd.settings/schema` |
