@@ -1,0 +1,22 @@
+name: Bug or device verification
+description: Report a problem or results from another TV model.
+body:
+  - type: textarea
+    id: device
+    attributes:
+      label: Device and version
+      description: TV model, Android/Fire OS version or API, resolution and Nibbles HD version.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Behavior and reproduction
+      description: Include settings, expected behavior, observed result and whether Preview or normal idle Dream was tested. Do not include private device identifiers.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Optional screenshots, short moving capture or relevant redacted logs.
