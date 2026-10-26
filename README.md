@@ -17,7 +17,7 @@
   <a href="https://github.com/sponsors/jeremykenedy"><img src="https://img.shields.io/badge/Sponsor-GitHub-pink" alt="Sponsor on GitHub"></a>
 </p>
 
-<p align="center"><a href="docs/screenshots.md"><img src="art/screenshots/default-physical-1080p.png" alt="Two matte snakes following varied routes toward food on the physical 1080p Fire TV" width="800"></a></p>
+<p align="center"><a href="docs/screenshots.md"><img src="art/screenshots/default-emulator-code3-1080p.png" alt="Two matte snakes following varied routes toward food in the final code 3 native 1080p TV emulator" width="800"></a></p>
 
 ## Contents
 
@@ -57,7 +57,7 @@ Open **Nibbles HD** from your apps to adjust options and preview. Installation a
 
 ## Fire TV Toolkit
 
-[Fire TV Toolkit](https://github.com/jeremykenedy/fire-tv-toolkit) offers guided installation, launcher choices, screensaver selection, supported timer controls and protection for supported settings. Set it up on your computer first:
+[Fire TV Toolkit](https://github.com/jeremykenedy/fire-tv-toolkit) 4.6.0 or later includes this saver in its catalog and offers guided installation, launcher choices, screensaver selection, supported timer controls and protection for supported settings. Set it up on your computer first:
 
 ```sh
 git clone https://github.com/jeremykenedy/fire-tv-toolkit.git

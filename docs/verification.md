@@ -30,7 +30,11 @@ A Google TV API 34 emulator at 1920x1080 demonstrated Preview, three native look
 
 ## Production code 3
 
-Final bounded native structural/metadata/Settings/Preview/Back/credits review is pending. The production release remains held until that exact signed artifact passes. Gameplay, Scene and Dream bytecode equivalence avoids repeating the unchanged ordinary idle test.
+The exact 1.0.0/code 3 signed APK, SHA-256 `c49bc22e5cbf5067da4bbcb1cd63140d31b0a49a83f6826e111986ee4b7d7971`, passed the final bounded native check on Google sdk_google_atv64_amati_arm64, Android 14/API 34 at 1920x1080. The same-signer code 2 replacement retained all eight values and identical provider schema. Native Preview settled for 40 seconds and returned to Settings with Back. D-pad Right changed speed to Brisk, which persisted through force-stop/recreation while the other seven values stayed intact. The final Credits row kept 72 pixels of bottom space; its offline NOTICE/Apache dialog scrolled with the D-pad and closed with Back. The existing UI 68 picker displayed the actual app-provided native thumbnail without Select or an OS selection write.
+
+Full 33-package APK/UID/grant/package-and-UID-appop snapshots, 14 UI values, 19 OS values, network/audio settings, readable providers, all eight options and external backup/import/preview-file bytes and existence were preserved. Final provider reads preceded restored stopped flags. Code 3 was retained stopped with no PID, Google Home resumed, guard stopped, Dream null and accessibility binding/crashed sets empty. No native pacing sample or new automatic-Dream claim is made for code 3; the unchanged physical code 2 evidence remains separate.
+
+Harness corrections are retained separately: Android 14 reports appId rather than the assumed userId label, immediate Back queries can precede transition completion, the theme uppercases CLOSE, and an initial picker transition produced no XML until a fresh settled read. A tuple-versus-JSON-list grant comparison was corrected offline; both saved complete control snapshots were equal, followed by a fresh read-only final-state check. These were automation assumptions, not native app faults. No source or artifact was edited during the gate.
 
 ## Other devices
 

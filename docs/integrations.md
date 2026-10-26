@@ -1,6 +1,6 @@
 # Integrations
 
-[Fire TV Toolkit](https://github.com/jeremykenedy/fire-tv-toolkit) installs and updates signed release APKs with published SHA-256 verification. It also offers supported screensaver selection/timer controls, launcher choices and protection for supported settings. Install and selection are separate; app settings remain app-owned.
+[Fire TV Toolkit](https://github.com/jeremykenedy/fire-tv-toolkit) 4.6.0 or later installs and updates signed release APKs with published SHA-256 verification. It also offers supported screensaver selection/timer controls, launcher choices and protection for supported settings. Install and selection are separate; app settings remain app-owned.
 
 ```sh
 git clone https://github.com/jeremykenedy/fire-tv-toolkit.git
@@ -12,7 +12,7 @@ screensaver --set=nibbles-hd
 
 Run the install command again to update. To remove, first select a different saver, then use `firetv-screensavers --uninstall=nibbles-hd --yes --force`. The guarded Toolkit flow explains changes and asks for confirmation interactively. Retain your prior selection and timer values for restoration.
 
-[Fire TV UI](https://github.com/jeremykenedy/fire-tv-ui) discovers installed DreamServices, displays native/bundled previews and opens the app's own settings. Its reviewed download catalog uses pinned signed release metadata and Android installation confirmation. It does not offer arbitrary-URL installs or a generic editor for this app's scene settings. Nibbles HD itself stays offline; companion downloads are separate.
+[Fire TV UI](https://github.com/jeremykenedy/fire-tv-ui) discovers installed DreamServices, displays native/bundled previews and opens the app's own settings. Version 1.11.0 or later includes Nibbles HD in its reviewed download catalog, using pinned signed release metadata and Android installation confirmation. It does not offer arbitrary-URL installs or a generic editor for this app's scene settings. Nibbles HD itself stays offline; companion downloads are separate.
 
 The [developer contract](integration-contract.md) records exact identity, release assets, preview hashes and local provider semantics. Repository and host release delivery are tracked separately from physical rollout; no other TV deployment is implied by catalog presence.
 
