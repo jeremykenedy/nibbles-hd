@@ -1,0 +1,158 @@
+{
+  "captureDate": "2026-10-26",
+  "runtimeEquivalence": "Production code 3 preserves game/options/scene/provider/Dream/Preview source and class bytecode from physical code 2.",
+  "images": [
+    {
+      "file": "art/screenshots/default-physical-1080p.png",
+      "sha256": "4db4f6d7ea407a997c15c00c851b749aa5ef365b79bb99c358b4b4ce727be432",
+      "sourceCapture": "default-physical-settled.png",
+      "sourceArtifactSha256": "7a91934b61956165384e56ff0637ce4d720e032604d9e2e12a00745988c03f4b",
+      "sourceVersionCode": 2,
+      "device": "Amazon AFTDEC012E",
+      "androidApi": 30,
+      "nativeSurface": [
+        1920,
+        1080
+      ],
+      "settings": {
+        "speed": "steady",
+        "snakes": "duet",
+        "palette": "mineral",
+        "stage": "random",
+        "board": "standard",
+        "effects": "soft",
+        "brightness": "balanced",
+        "randomize_all": "false"
+      },
+      "processing": "Unmodified native PNG"
+    },
+    {
+      "file": "art/screenshots/trio-physical-1080p.png",
+      "sha256": "9456b562928587c6c6483b685814bdb0f70718716534ba9a0b9ce975110d13f5",
+      "sourceCapture": "max-physical-settled.png",
+      "sourceArtifactSha256": "7a91934b61956165384e56ff0637ce4d720e032604d9e2e12a00745988c03f4b",
+      "sourceVersionCode": 2,
+      "device": "Amazon AFTDEC012E",
+      "androidApi": 30,
+      "nativeSurface": [
+        1920,
+        1080
+      ],
+      "settings": {
+        "speed": "brisk",
+        "snakes": "trio",
+        "palette": "orchid",
+        "stage": "islands",
+        "board": "wide",
+        "effects": "radiant",
+        "brightness": "bright",
+        "randomize_all": "false"
+      },
+      "processing": "Unmodified native PNG"
+    },
+    {
+      "file": "res/drawable-nodpi/screensaver_preview.jpg",
+      "sha256": "99c65890a75fe6404d95f198be309811be60d995d3249ad735ea3035356fef59",
+      "sourceCapture": "default-physical-settled.png",
+      "sourceArtifactSha256": "7a91934b61956165384e56ff0637ce4d720e032604d9e2e12a00745988c03f4b",
+      "sourceVersionCode": 2,
+      "device": "Amazon AFTDEC012E",
+      "androidApi": 30,
+      "nativeSurface": [
+        1920,
+        1080
+      ],
+      "settings": {
+        "speed": "steady",
+        "snakes": "duet",
+        "palette": "mineral",
+        "stage": "random",
+        "board": "standard",
+        "effects": "soft",
+        "brightness": "balanced",
+        "randomize_all": "false"
+      },
+      "processing": "384x216 JPEG resize with ffmpeg, no retouching"
+    },
+    {
+      "file": "art/screenshots/settings-emulator-code3-1080p.png",
+      "sha256": "100a7a989aa517327eb7dd1cbe5c0aeaf0a290590bb053b12716fb73a69b4579",
+      "sourceCapture": "settings-default-code3.png",
+      "sourceArtifactSha256": "c49bc22e5cbf5067da4bbcb1cd63140d31b0a49a83f6826e111986ee4b7d7971",
+      "sourceVersionCode": 3,
+      "device": "Google sdk_google_atv64_amati_arm64 emulator",
+      "androidApi": 34,
+      "nativeSurface": [
+        1920,
+        1080
+      ],
+      "processing": "Unmodified native PNG",
+      "settings": "All defaults at capture; credits/scroll after Brisk persistence check, with all other settings unchanged."
+    },
+    {
+      "file": "art/screenshots/default-emulator-code3-1080p.png",
+      "sha256": "f2054fcdc1cf988ad4f5b36a2a06e6f60fe4fbdcab867ecf9bb7aa7fa7ad695c",
+      "sourceCapture": "default-code3-native-settled.png",
+      "sourceArtifactSha256": "c49bc22e5cbf5067da4bbcb1cd63140d31b0a49a83f6826e111986ee4b7d7971",
+      "sourceVersionCode": 3,
+      "device": "Google sdk_google_atv64_amati_arm64 emulator",
+      "androidApi": 34,
+      "nativeSurface": [
+        1920,
+        1080
+      ],
+      "processing": "Unmodified native PNG",
+      "settings": "All defaults at capture; credits/scroll after Brisk persistence check, with all other settings unchanged."
+    },
+    {
+      "file": "art/screenshots/credits-emulator-code3-1080p.png",
+      "sha256": "736ed5e37afac81acf1e32be626ec5153b1378b123e9cbc365cf7675c8ce93fb",
+      "sourceCapture": "credits-top-code3.png",
+      "sourceArtifactSha256": "c49bc22e5cbf5067da4bbcb1cd63140d31b0a49a83f6826e111986ee4b7d7971",
+      "sourceVersionCode": 3,
+      "device": "Google sdk_google_atv64_amati_arm64 emulator",
+      "androidApi": 34,
+      "nativeSurface": [
+        1920,
+        1080
+      ],
+      "processing": "Unmodified native PNG",
+      "settings": "All defaults at capture; credits/scroll after Brisk persistence check, with all other settings unchanged."
+    },
+    {
+      "file": "art/screenshots/credits-scrolled-emulator-code3-1080p.png",
+      "sha256": "ff53cc0f7da4755a109e64f11804805070efbefa0909b1445c63e17647aafa43",
+      "sourceCapture": "credits-scrolled-code3.png",
+      "sourceArtifactSha256": "c49bc22e5cbf5067da4bbcb1cd63140d31b0a49a83f6826e111986ee4b7d7971",
+      "sourceVersionCode": 3,
+      "device": "Google sdk_google_atv64_amati_arm64 emulator",
+      "androidApi": 34,
+      "nativeSurface": [
+        1920,
+        1080
+      ],
+      "processing": "Unmodified native PNG",
+      "settings": "All defaults at capture; credits/scroll after Brisk persistence check, with all other settings unchanged."
+    }
+  ],
+  "movies": [
+    {
+      "file": "default-physical-native.mp4",
+      "seconds": 24.900756,
+      "sha256": "57beed05030cc8054b97c8668605b974819024da45e9dd7d899670487a44e026"
+    },
+    {
+      "file": "max-physical-native.mp4",
+      "seconds": 19.869567,
+      "sha256": "efcc590c1e9907c0dcef4dd4362984aaec3ff8860cc10e519a95997fbb3a905c"
+    },
+    {
+      "file": "dream-physical-native.mp4",
+      "seconds": 44.539,
+      "sha256": "a5307c327c3d66a8224d2170794e9b23ed7e35b07436bd06b274c170bdd51379"
+    }
+  ],
+  "independentMovingReview": "Delivery coordinator played all three actual movies at 1x to end and sampled raw frames. No moving-quality rejection; ready for production packaging. Not owner acceptance or every-frame certification.",
+  "limits": "One physical model, native HD. Mixed gfxinfo and sampled presents retained in verification. No universal FPS, 4K, thermal, reboot or other-device claim.",
+  "productionNativeGate": "Exact code3 same-signer update, all eight values/schema retained, native settled40s Preview/Back, D-pad Brisk + process recreation persistence, bottom Credits/offline scrolling/Back and app-provided thumbnail passed. Full33-package restoration passed with final provider reads before stops; emulator returned. No new automatic-Dream or pacing claim."
+}

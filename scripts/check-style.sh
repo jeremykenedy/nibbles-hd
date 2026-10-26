@@ -11,5 +11,6 @@ if [[ ! -f "$FORMATTER" ]]; then
 fi
 printf '%s  %s\n' 834b2a0c38cb774953322a84b5ca3f2f40dd3156650b3cd44d3b744345962f7a "$FORMATTER" | shasum -a 256 -c - >/dev/null
 java -jar "$FORMATTER" --dry-run --set-exit-if-changed src/com/jeremykenedy/nibbleshd/*.java tests/*.java
+"$ROOT/build/python-coverage/bin/ruff" check .
+"$ROOT/build/python-coverage/bin/ruff" format --check .
 shellcheck build.sh test.sh scripts/*.sh
-python3 -m py_compile scripts/*.py

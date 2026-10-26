@@ -1,0 +1,10 @@
+name: Feature or documentation request
+description: Suggest a focused improvement.
+body:
+  - type: textarea
+    id: request
+    attributes:
+      label: Requested improvement
+      description: Describe the use case and the behavior or documentation you want.
+    validations:
+      required: true

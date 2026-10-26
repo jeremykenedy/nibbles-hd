@@ -5,7 +5,7 @@
     <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
     <application android:label="Nibbles HD" android:theme="@android:style/Theme.Material.NoActionBar"
         android:allowBackup="false" android:usesCleartextTraffic="false"
-        android:hardwareAccelerated="true" android:icon="@drawable/icon" android:banner="@drawable/banner">
+        android:hardwareAccelerated="true" android:icon="@drawable/icon" android:banner="@drawable/screensaver_preview">
         <activity android:name=".SettingsActivity" android:exported="true" android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
